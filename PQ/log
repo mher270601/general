@@ -1,0 +1,90 @@
+In file included from priority_queue.hpp:43,
+                 from main.cpp:3:
+priority_queue.impl.hpp:5:79: error: invalid use of incomplete type ‘class Priority_Queue::PriorityQueue<T>’
+    5 | Priority_Queue::PriorityQueue<T>::PriorityQueue(/* T arr[], PQ_Size arrSize */){
+      |                                                                               ^
+In file included from main.cpp:3:
+priority_queue.hpp:10:8: note: declaration of ‘class Priority_Queue::PriorityQueue<T>’
+   10 |  class PriorityQueue{
+      |        ^~~~~~~~~~~~~
+In file included from priority_queue.hpp:43,
+                 from main.cpp:3:
+priority_queue.impl.hpp:12:70: error: invalid use of incomplete type ‘class Priority_Queue::PriorityQueue<T>’
+   12 | void Priority_Queue::PriorityQueue<T>::CopyInit(const TContainer& arr){
+      |                                                                      ^
+In file included from main.cpp:3:
+priority_queue.hpp:10:8: note: declaration of ‘class Priority_Queue::PriorityQueue<T>’
+   10 |  class PriorityQueue{
+      |        ^~~~~~~~~~~~~
+In file included from priority_queue.hpp:43,
+                 from main.cpp:3:
+priority_queue.impl.hpp:18:67: error: invalid use of incomplete type ‘class Priority_Queue::PriorityQueue<T>’
+   18 | void Priority_Queue::PriorityQueue<T>::Build(/* PQ_Size arrSize */){
+      |                                                                   ^
+In file included from main.cpp:3:
+priority_queue.hpp:10:8: note: declaration of ‘class Priority_Queue::PriorityQueue<T>’
+   10 |  class PriorityQueue{
+      |        ^~~~~~~~~~~~~
+In file included from priority_queue.hpp:43,
+                 from main.cpp:3:
+priority_queue.impl.hpp:25:60: error: invalid use of incomplete type ‘class Priority_Queue::PriorityQueue<T>’
+   25 | void Priority_Queue::PriorityQueue<T>::Heapify(PQ_Size Indx){
+      |                                                            ^
+In file included from main.cpp:3:
+priority_queue.hpp:10:8: note: declaration of ‘class Priority_Queue::PriorityQueue<T>’
+   10 |  class PriorityQueue{
+      |        ^~~~~~~~~~~~~
+In file included from priority_queue.hpp:43,
+                 from main.cpp:3:
+priority_queue.impl.hpp:43:59: error: invalid use of incomplete type ‘class Priority_Queue::PriorityQueue<T>’
+   43 | void Priority_Queue::PriorityQueue<T>::Push(const T& value){
+      |                                                           ^
+In file included from main.cpp:3:
+priority_queue.hpp:10:8: note: declaration of ‘class Priority_Queue::PriorityQueue<T>’
+   10 |  class PriorityQueue{
+      |        ^~~~~~~~~~~~~
+In file included from priority_queue.hpp:43,
+                 from main.cpp:3:
+priority_queue.impl.hpp:62:44: error: invalid use of incomplete type ‘class Priority_Queue::PriorityQueue<T>’
+   62 | void Priority_Queue::PriorityQueue<T>::Pop(){
+      |                                            ^
+In file included from main.cpp:3:
+priority_queue.hpp:10:8: note: declaration of ‘class Priority_Queue::PriorityQueue<T>’
+   10 |  class PriorityQueue{
+      |        ^~~~~~~~~~~~~
+In file included from priority_queue.hpp:43,
+                 from main.cpp:3:
+priority_queue.impl.hpp:68:41: error: invalid use of incomplete type ‘class Priority_Queue::PriorityQueue<T>’
+   68 | T Priority_Queue::PriorityQueue<T>::Top(){
+      |                                         ^
+In file included from main.cpp:3:
+priority_queue.hpp:10:8: note: declaration of ‘class Priority_Queue::PriorityQueue<T>’
+   10 |  class PriorityQueue{
+      |        ^~~~~~~~~~~~~
+In file included from priority_queue.hpp:43,
+                 from main.cpp:3:
+priority_queue.impl.hpp:72:46: error: invalid use of incomplete type ‘class Priority_Queue::PriorityQueue<T>’
+   72 | bool Priority_Queue::PriorityQueue<T>::Empty(){
+      |                                              ^
+In file included from main.cpp:3:
+priority_queue.hpp:10:8: note: declaration of ‘class Priority_Queue::PriorityQueue<T>’
+   10 |  class PriorityQueue{
+      |        ^~~~~~~~~~~~~
+In file included from priority_queue.hpp:43,
+                 from main.cpp:3:
+priority_queue.impl.hpp:76:48: error: invalid use of incomplete type ‘class Priority_Queue::PriorityQueue<T>’
+   76 | PQ_Size Priority_Queue::PriorityQueue<T>::Size(){
+      |                                                ^
+In file included from main.cpp:3:
+priority_queue.hpp:10:8: note: declaration of ‘class Priority_Queue::PriorityQueue<T>’
+   10 |  class PriorityQueue{
+      |        ^~~~~~~~~~~~~
+In file included from priority_queue.hpp:43,
+                 from main.cpp:3:
+priority_queue.impl.hpp:80:50: error: invalid use of incomplete type ‘class Priority_Queue::PriorityQueue<T>’
+   80 | Priority_Queue::PriorityQueue<T>::~PriorityQueue(){
+      |                                                  ^
+In file included from main.cpp:3:
+priority_queue.hpp:10:8: note: declaration of ‘class Priority_Queue::PriorityQueue<T>’
+   10 |  class PriorityQueue{
+      |        ^~~~~~~~~~~~~

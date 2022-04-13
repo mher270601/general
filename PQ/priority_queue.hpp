@@ -10,18 +10,21 @@ namespace Priority_Queue{
 	class PriorityQueue{
 		public:
 			PriorityQueue();
+			PriorityQueue(TContainer& arr);
 			~PriorityQueue();
 			T Top();
 			bool Empty();
 			size Size();
 			void Push(const T& value);
 			void Pop();
+			void PrintContainer();
 		private:
+			C cmp;
 			size m_size = 0;
 			//size m_capacity = 0;
 			TContainer m_arr;
-			void CopyInit(const TContainer& arr);
-			void Build(size arrSize);
+			void CopyInit(TContainer& arr);
+			void Build(TContainer& arr);
 			void Heapify(size Indx);
 			//void ReAlloc(size newCapacity);
 	}; // PQ Class
@@ -33,10 +36,10 @@ namespace {
 		return (Indx >> 1);
 	}
 	inline PQ_Size left(PQ_Size Indx){
-		return (Indx << 1);
+		return (Indx << 1) + 1;
 	}
 	inline PQ_Size right(PQ_Size Indx){
-		return ((Indx << 1) + 1);
+		return ((Indx << 1) + 2);
 	}
 }  // Anonymous namespace for parent, left, right
 

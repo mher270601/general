@@ -1,4 +1,5 @@
 #include <iostream>
+#include <functional>
 #include "priority_queue.hpp"
 
 int main(){
@@ -7,7 +8,7 @@ int main(){
 	ob.Push(5);
 	ob.Push(8);
 	ob.Push(2);
-	ob.Push(1);
-
+	ob.Push(9);
+	ob.PrintContainer();
 	return 0;
 }
