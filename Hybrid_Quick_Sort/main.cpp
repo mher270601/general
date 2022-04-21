@@ -10,11 +10,5 @@ int main(){
 	for(size_t i = 0; i < 7; ++i){
 		std::cout << al[i] << std::endl;
 	}
-	//std::cout << " -- -- -- " << std::endl;
-	//int X[5] = {7, 3, 8, 2, 4};
-	//Hybryd_QSort::QuickSort<int>(X, 0, 5);
-	//for(size_t i = 0; i < 5; ++i){
-	//	std::cout << X[i] << std::endl;
-	//}
 	return 0;
 }
