@@ -14,7 +14,6 @@ template<typename T>
 class Graph{
 	public:
 		Graph(std::string_view filePath) : m_filePath(filePath){};
-		//Graph(std::ifstream& graphFile) : m_file(graphFile){};
 		Graph() =delete;
 		~Graph();
 		size_t maxPath() const noexcept;
