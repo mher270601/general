@@ -1,0 +1,9 @@
+function gg(a,b) = b + 2 * a;
+var cur = (gg(1,4) + gg(7,7)) * 2;
+var ga = (4 + 11) * gg(3,5) + 1 + gg(7,1) - 3;
+var acc = cur + 8 * (3 + 1) + 2;
+function fff(a_f,bgg) = a_f * 2 + bgg;
+var b = 5 + acc * 2;
+function myF(k,o,m) = k * k * o * m;
+var ko = myF(acc*ga-acc+cur,3-1-1,1+1) + 1;
+var myVar = myF(5,7,2) * 2;
