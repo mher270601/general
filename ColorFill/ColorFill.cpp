@@ -64,7 +64,7 @@ int main()
                 //std::cout << "Go UP" << std::endl;
                 //std::this_thread::sleep_for(std::chrono::milliseconds(2000));
 				go_up(matrix, start_X, start_Y);
-                game = false;
+                		game = false;
                 }
 			break;
 			case keyRight:
