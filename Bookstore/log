@@ -1,0 +1,48 @@
+In file included from Bookstore.hpp:16,
+                 from main.cpp:14:
+fileManager.hpp: In member function ‘virtual void Administrator::receiveBook(const string&)’:
+fileManager.hpp:142:22: error: no matching function for call to ‘remove(const string&)’
+  142 |   std::remove(m_FPath);
+      |                      ^
+In file included from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6493,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from main.cpp:2:
+/usr/include/stdio.h:146:12: note: candidate: ‘int remove(const char*)’
+  146 | extern int remove (const char *__filename) __THROW;
+      |            ^~~~~~
+/usr/include/stdio.h:146:32: note:   no known conversion for argument 1 from ‘const string’ {aka ‘const std::__cxx11::basic_string<char>’} to ‘const char*’
+  146 | extern int remove (const char *__filename) __THROW;
+      |                    ~~~~~~~~~~~~^~~~~~~~~~
+In file included from /usr/include/c++/9/algorithm:62,
+                 from fileManager.hpp:4,
+                 from Bookstore.hpp:16,
+                 from main.cpp:14:
+/usr/include/c++/9/bits/stl_algo.h:896:5: note: candidate: ‘template<class _FIter, class _Tp> _FIter std::remove(_FIter, _FIter, const _Tp&)’
+  896 |     remove(_ForwardIterator __first, _ForwardIterator __last,
+      |     ^~~~~~
+/usr/include/c++/9/bits/stl_algo.h:896:5: note:   template argument deduction/substitution failed:
+In file included from Bookstore.hpp:16,
+                 from main.cpp:14:
+fileManager.hpp:142:22: note:   candidate expects 3 arguments, 1 provided
+  142 |   std::remove(m_FPath);
+      |                      ^
+In file included from /usr/include/c++/9/algorithm:71,
+                 from fileManager.hpp:4,
+                 from Bookstore.hpp:16,
+                 from main.cpp:14:
+/usr/include/c++/9/pstl/glue_algorithm_defs.h:224:1: note: candidate: ‘template<class _ExecutionPolicy, class _ForwardIterator, class _Tp> __pstl::__internal::__enable_if_execution_policy<_ExecutionPolicy, _ForwardIterator> std::remove(_ExecutionPolicy&&, _ForwardIterator, _ForwardIterator, const _Tp&)’
+  224 | remove(_ExecutionPolicy&& __exec, _ForwardIterator __first, _ForwardIterator __last, const _Tp& __value);
+      | ^~~~~~
+/usr/include/c++/9/pstl/glue_algorithm_defs.h:224:1: note:   template argument deduction/substitution failed:
+In file included from Bookstore.hpp:16,
+                 from main.cpp:14:
+fileManager.hpp:142:22: note:   candidate expects 4 arguments, 1 provided
+  142 |   std::remove(m_FPath);
+      |                      ^
