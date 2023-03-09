@@ -1,0 +1,43 @@
+In file included from list.hpp:37,
+                 from main.cpp:3:
+list.impl.hpp: In member function ‘void DataStructure::List<T>::Push_back(const T&) const’:
+list.impl.hpp:6:5: error: increment of read-only location ‘((const DataStructure::List<T>*)this)->DataStructure::List<T>::m_size’
+    6 |   ++m_size;
+      |     ^~~~~~
+list.impl.hpp:12:4: error: increment of read-only location ‘((const DataStructure::List<T>*)this)->DataStructure::List<T>::m_size’
+   12 |  ++m_size;
+      |    ^~~~~~
+list.impl.hpp: In member function ‘void DataStructure::List<T>::Push_front(const T&) const’:
+list.impl.hpp:24:5: error: increment of read-only location ‘((const DataStructure::List<T>*)this)->DataStructure::List<T>::m_size’
+   24 |   ++m_size;
+      |     ^~~~~~
+list.impl.hpp:30:4: error: increment of read-only location ‘((const DataStructure::List<T>*)this)->DataStructure::List<T>::m_size’
+   30 |  ++m_size;
+      |    ^~~~~~
+list.impl.hpp: At global scope:
+list.impl.hpp:38:6: error: no declaration matches ‘void DataStructure::List<T>::Pop_back() const’
+   38 | void List<T>::Pop_back() const {
+      |      ^~~~~~~
+list.impl.hpp:38:6: note: no functions named ‘void DataStructure::List<T>::Pop_back() const’
+In file included from main.cpp:3:
+list.hpp:5:8: note: ‘class DataStructure::List<T>’ defined here
+    5 |  class List{
+      |        ^~~~
+In file included from list.hpp:37,
+                 from main.cpp:3:
+list.impl.hpp:74:7: error: deduced class type ‘List’ in function return type
+   74 | List& List<T>::operator=(List rhs){
+      |       ^~~~~~~
+In file included from main.cpp:3:
+list.hpp:5:8: note: ‘template<class T> class DataStructure::List’ declared here
+    5 |  class List{
+      |        ^~~~
+In file included from list.hpp:37,
+                 from main.cpp:3:
+list.impl.hpp:89:7: error: deduced class type ‘List’ in function return type
+   89 | List& List<T>::operator=(List&& rhs) noexcept {
+      |       ^~~~~~~
+In file included from main.cpp:3:
+list.hpp:5:8: note: ‘template<class T> class DataStructure::List’ declared here
+    5 |  class List{
+      |        ^~~~
