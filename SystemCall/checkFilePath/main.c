@@ -38,6 +38,10 @@ int main(int argc, char* argv[]){
 				printf("%s has founded\n", argv[i]);
 				char* _dirFile = malloc(strlen(_path) + strlen(argv[i]));
 				strcpy(_dirFile, _path);
+				if(_dirFile[strlen(_dirFile)-1] != '/'){
+					printf("IF CONDITION\n");
+					strcat(_dirFile, "/");
+				}
 				strcat(_dirFile, dir_entry->d_name);
 				
 				int source_fd1 = open(argv[i], O_RDONLY);
@@ -52,7 +56,7 @@ int main(int argc, char* argv[]){
 				}
 				char buff1[1], buff2[1];
 				int sizeOfBuff1 = 0, sizeOfBuff2 = 0;
-				while((sizeOfBuff1 = read(source_fd1, buff1, 1)) > 0 && (sizeOfBuff2 = read(source_fd2, buff2, 1)) > 0){
+				while((sizeOfBuff1 = read(source_fd1, buff1, 1)) > 0 || (sizeOfBuff2 = read(source_fd2, buff2, 1)) > 0){
 					if(buff1[0] != buff2[0]){
 						printf("Files is not the same\n");
 						done = 1;
