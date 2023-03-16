@@ -39,7 +39,6 @@ int main(int argc, char* argv[]){
 				char* _dirFile = malloc(strlen(_path) + strlen(argv[i]));
 				strcpy(_dirFile, _path);
 				if(_dirFile[strlen(_dirFile)-1] != '/'){
-					printf("IF CONDITION\n");
 					strcat(_dirFile, "/");
 				}
 				strcat(_dirFile, dir_entry->d_name);
