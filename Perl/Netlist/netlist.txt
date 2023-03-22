@@ -1,0 +1,2 @@
+R: myTest a1 a2 74K
+m: test2 myDrain myGate mySorce myBulk  0.5u
