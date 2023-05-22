@@ -1,4 +1,6 @@
 20% training anelu hamar, et procesy
+encoded_imgs = tf.keras.backend.get_value(autoencoder.encoder(y_train))
+decoded_imgs = tf.keras.backend.get_value(autoencoder.decoder(encoded_imgs))
 
 
 
