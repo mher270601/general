@@ -14,6 +14,8 @@ DENSE : Inqy himnakanum ogtagorcvum a neyronayin canci verjnakan sherterum, nra 
 	ACTIVATION='SIGMOID' : CONVERT INPUT VALUES BETWEEN [0, 1] ...   sigmoid(x) = 1 / (1 + exp(-x))
 
 CONV2D : 
+	
+	Nkari nerkayacman dzev a
 
 FLATTEN : Inqy bazmachap mutqayin tvyalnery darcnum a vector, vory kirarvum a himnakanum dense layeric araj, ev kara mshakvi dense-i mijocov
 
