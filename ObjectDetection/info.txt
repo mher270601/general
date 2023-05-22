@@ -1,0 +1,43 @@
+20% training anelu hamar, et procesy
+
+
+
+latent_dim :  Inqy nerqin vectori chapna, te inchqan petqa sexmvac lini, ete iran tanq mec tiv, aveli manramasn texekatvutyun karanq stananq, nerkayacnenq aveli bard naxsher,  isk dra hamar petq kga aveli shat resourcner (training data ev hashvoxakan resurcner). Ete uzum enq qich hashvoxakan resurcner ogtagorcenq, karanq latent_dimy qich tanq 
+
+######### LAYERS ##########
+
+DENSE : Inqy himnakanum ogtagorcvum a neyronayin canci verjnakan sherterum, nra amen neyron miacvac a naxord sherti bolor neyronneri het, heto galis a actiovation gorcaruyty, vory stanum a ira funckiayi sahmanman tipy. 
+
+	ACTIVATION='RELU' : MAX(X, 0) --> stanum a mutqin x, u veradarcnuma 0-i u et x-i max-y, ete x-y drakana a kta x, hakarak depqum 0
+	ACTIVATION='SIGMOID' : CONVERT INPUT VALUES BETWEEN [0, 1] ...   sigmoid(x) = 1 / (1 + exp(-x))
+
+CONV2D : 
+
+FLATTEN : Inqy bazmachap mutqayin tvyalnery darcnum a vector, vory kirarvum a himnakanum dense layeric araj, ev kara mshakvi dense-i mijocov
+
+RESHAPE : dzevapoxum mutqayin tensory cankali dzevi, pahpanelov tarreri yndhanur tivy
+
+MAXPOOLING : 
+	
+	PADDING='SAME' : INPUTI CHAPY = OUTPUTI CHAP --> Pahpanel taracakan chapery u apahovel vor elqayin chapy hamnkni mutqayin chapi het
+
+###############
+
+autoencoder.COMPILE(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']) : Compilacian ogtagorcvum a autoencoderi modeli usucman gorcntacy kargavorelu hamar
+
+	OPTIMIZER='ADAM' : Algoritm a, kshirnery u shexumnery tarmacnelu hamar
+	LOSS='BINARY_CROSSENTROPY' : verakarucvac elqy hamematvum e mutqi het` verakarucman korusty chapelu hamar
+	METRIC=['ACCURACY'] : Ogtagorcvum a usucman yntacqum autoencoder-i ashxatanqy gnahatelu hamar. Inqy vorpes chapich a
+
+autoencoder.BUILD(input_shape=(None, 1275000)) : Buildum es
+	
+	INPUT_SHAPE=(NONE, 1275000) : NONE-y cuc tali vor modely kara ynduni xmbaqanaki popoxakan chaper, isk 1275000-y cuc a tali mutqayin tvyalneri mej arka hatkanishneri kam chaper qanaky
+
+autoencoder.SUMMARY() : Consolum tpuma informacian, te inch layerner en ogtagorcvel u yndhanur informacia
+
+autoencoder.FIT(x_train, y_train, epochs=10, batch_size=8, shuffle=True, validation_data=(x_train, y_train)) : Modely train anelu hamara
+
+	EPOCHS : 1 epochy, nshanakum a 1 hat iteracia amboxj tvyalneri vra. Gtnum a tvyalneri himqum ynkac orinachaputyunner. Epochi qanaky mecacneluc karanq aveli shat tesnenq usucman amboxj tvyalneri havaqacun u sa karox a shahavet linel modeli chshgrtutyan u barelavman hamar, bayc naxatesvacic shat talu depqum el karan overfitting unenanq. Qich sahmanelu depqum el karox e hangecnel anbavararutyan
+	BATCH_SIZE : Tvyalnery bajanvum en xmbaqanaki, yst vori a tarmacvum modeli kshirnery, nayev azduma hishoxutyan vra. Aveli mec talov, karanq aveli arag  verapatrastenq, vorovhetev zugaher aveli shat verapatrastum kgna, bayc et jamanakel pahanjvum a aveli shat resurs, isk qchi depqum parza arden
+	--SHUFFLE=TRUE : Xarnuma tvyalnery amen epochic araaj, vor chishi nmushneri herrtakanutyuny u barelavi yndhanracumy
+	VALIDATION_DATA=(X_TRAIN, Y_TRAIN) : Amen epochi verjum gnahatuma yndhanur modely u himnakanum naxatesvac a monitoring anelu hamar
