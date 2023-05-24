@@ -1,0 +1,11 @@
+In file included from CmdParser.hpp:33,
+                 from InputCmd.hpp:9,
+                 from pwpt_fileManager.hpp:9,
+                 from main.cpp:4:
+CmdParser.impl.cpp: In member function ‘PowerPoint::Token PowerPoint::CmdParser::getToken(std::stringstream&) const’:
+CmdParser.impl.cpp:33:48: error: passing ‘const PowerPoint::CmdParser’ as ‘this’ argument discards qualifiers [-fpermissive]
+   33 |   currToken.m_actionType = this->getAction(expr);
+      |                                                ^
+CmdParser.impl.cpp:18:14: note:   in call to ‘PowerPoint::EActionType PowerPoint::CmdParser::getAction(std::stringstream&)’
+   18 |  EActionType CmdParser::getAction(std::stringstream& expr){
+      |              ^~~~~~~~~
