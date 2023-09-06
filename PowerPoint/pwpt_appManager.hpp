@@ -13,7 +13,7 @@ namespace PowerPoint{
 	class IFileBaseComponents{
 	public:
 		virtual void GetData() = 0;
-		virtual void ReadParseData() = 0;
+		virtual void ParseData() = 0;
 		virtual void ParseLine(std::stringstream&) = 0;
 		virtual ~IBaseComponents() = default;
 	private:
@@ -22,7 +22,7 @@ namespace PowerPoint{
 	class FileManager : public IFileBaseComponents{
 	public:
 		void GetData() override;
-		void ReadParseData() override;
+		void ParseData() override;
 		static FileManager& GetInstance();
 		FileManager& operator=(const FileManager& rhs) = delete;
 		FileManager(const FileManager& rhs) = delete;
@@ -35,7 +35,8 @@ namespace PowerPoint{
 		std::fstream m_file;
 	};
 
-}
+} // namespace PowerPoint
+
 #include "pwpt_fileManager.impl.cpp"
 
 #endif // __READ__INFO__HPP__

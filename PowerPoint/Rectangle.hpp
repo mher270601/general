@@ -9,15 +9,24 @@
 
 namespace PowerPoint{
 
-    class Rectangle : public Shape {
-    public:
-        Rectangle(Color, Color, const size_t);
-        Rectangle() = default;
-        void PrintMe() const noexcept override;
-    	~Rectangle();
-    private:
+    	class Rectangle : public Shape {
+    	public:
+    	    	Rectangle(const std::string& objectName, EColor, EColor, const size_t);
+		Rectangle(const std::string& objectName);
+    	    
 
-    }; // Rectangle
+		void SetSize(const size_t size) override;
+        	void SetBorderSize(const size_t borderSize) override;
+        	void SetColor(const EColor color) override;
+        	void SetBackgroundColor(const EColor backgroundColor) override;
+	    	void PrintMe() const noexcept override;
+    		~Rectangle();
+    	protected:
+		//void generateIdentifier() override;
+    	private:
+
+
+    	}; // Rectangle
 
 }
 

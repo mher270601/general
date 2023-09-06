@@ -11,7 +11,7 @@ namespace PowerPoint{
         Number
     };
 
-    enum class EActionType{
+    enum class ECommandType{
         Set,
         Reset,
         Create,
@@ -23,7 +23,7 @@ namespace PowerPoint{
     struct Token{
         ETokenType m_tokenType;
         union{
-            EActionType m_actionType;
+            ECommandType m_commandType;
             int number;
         };
     };

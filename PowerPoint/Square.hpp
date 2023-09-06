@@ -11,8 +11,16 @@ namespace PowerPoint{
     
 	class Square : public Shape {
     	public:
-        	Square(Color, Color, const size_t);
-        	void PrintMe() const noexcept override;
+        	Square(const std::string& objectName, EColor, EColor, const size_t);
+		Square(const std::string& objectName);
+		
+		void SetSize(const size_t size) override;
+        	void SetBorderSize(const size_t borderSize) override;
+        	void SetColor(const EColor color) override;
+        	void SetBackgroundColor(const EColor backgroundColor) override;
+        	
+		void PrintMe() const noexcept override;
+		~Square();
     	private:
 
     	}; // Square

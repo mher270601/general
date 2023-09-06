@@ -24,21 +24,24 @@ namespace PowerPoint{
 		//do{
 		std::cout << "Input command: ";
 		std::cin >> CurrentCommand;
-		std::stringstream SExpr(CurrentCommand);
-		if(CmdVerified(SExpr)){
-			return CurrentCommand;
-		}
-		throw CmdException("Invalid Command ! (if you want to finish, write 'finish' or 'end')");
-		assert(false && "Must not reach here");
+		return CurrentCommand;	
+		//std::stringstream SExpr(CurrentCommand);
+		//if(CmdVerified(SExpr)){
+		//	return CurrentCommand;
+		//}
+		//throw CmdException("Invalid Command ! (if you want to finish, write 'finish' or 'end')");
+		//assert(false && "Must not reach here");
+		
 		//}while(CurrentCommand != "end" || CurrentCommand != "finish");
 		
 	}
-	bool CmdInput::CmdVerified(std::stringstream& expr) const noexcept{
-		//TODO
-		m_cmdParser.Parse(expr);
-		
-		return true;	
-	}
+	
+	//bool CmdInput::CmdVerified(std::stringstream& expr) const noexcept{
+	//	//TODO
+	//	m_cmdParser.Parse(expr);
+	//	
+	//	return true;	
+	//}
 
 }
 

@@ -9,31 +9,36 @@
 #include "InputCmd.hpp"
 #include "PowerPoint.hpp"
 
-class IBaseComponents{
-public:
-	virtual void GetData() = 0;
-	virtual void ReadParseData() = 0;
-	virtual void ParseLine(std::stringstream&) = 0;
-	virtual ~IBaseComponents() = default;
-private:
-};
+namespace PowerPoint{
 
-class FileManager : public IBaseComponents{
-public:
-	void GetData() override;
-	void ReadParseData() override;
-	static FileManager& GetInstance();
-	FileManager& operator=(const FileManager& rhs) = delete;
-	FileManager(const FileManager& rhs) = delete;
-	virtual ~FileManager() = default;
-	FileManager();
-private:
-	void ParseLine(std::stringstream&) override;
-private:
-	const std::string m_FPath;
-	std::fstream m_file;
-	std::shared_ptr<PowerPoint::CmdInput>& m_cmdInput = PowerPoint::CmdInput::GetInstance();
-};
+	class IBaseComponents{
+	public:
+		virtual void GetData() = 0;
+		virtual void ParseData() = 0;
+		virtual void ParseLine(std::stringstream&) = 0;
+		virtual ~IBaseComponents() = default;
+	private:
+	};
+	
+	class FileManager : public IBaseComponents{
+	public:
+		void GetData() override;
+		void ParseData() override;
+		// Meyer's Singleton
+		static FileManager& GetInstance();
+		FileManager& operator=(const FileManager& rhs) = delete;
+		FileManager(const FileManager& rhs) = delete;
+		virtual ~FileManager() = default;
+		FileManager();
+	private:
+		void ParseLine(std::stringstream&) override;
+	private:
+		const std::string m_FPath;
+		std::fstream m_file;
+		//std::shared_ptr<PowerPoint::CmdInput>& m_cmdInput = PowerPoint::CmdInput::GetInstance();
+	};
+
+} // namespace PowerPoint
 
 #include "pwpt_fileManager.impl.cpp"
 

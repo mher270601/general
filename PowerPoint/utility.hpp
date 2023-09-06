@@ -7,32 +7,32 @@
 
 #include "ETypes.hpp"
 
-Color getColor(std::string color){
+EColor getColor(std::string color){
 	//Color _color;
 	std::transform(color.begin(), color.end(), color.begin(), ::toupper);
 	if(color == "BLACK"){
-		return Color::BLACK;
+		return EColor::BLACK;
 	}
 	else if(color == "RED"){
-		return Color::RED;
+		return EColor::RED;
 	}
 	else if(color == "BLUE"){
-		return Color::BLUE;
+		return EColor::BLUE;
 	}
 	else if(color == "GREEN"){
-		return Color::GREEN;
+		return EColor::GREEN;
 	}
 	else if(color == "WHITE"){
-		return Color::WHITE;
+		return EColor::WHITE;
 	}
 	else if(color == "YELLOW"){
-		return Color::YELLOW;
+		return EColor::YELLOW;
 	}
 	else if(color == "PINK"){
-		return Color::PINK;
+		return EColor::PINK;
 	}
 	else if(color == "GREY"){
-		return Color::PINK;
+		return EColor::GREY;
 	}
 	assert(false && "Invalid color: Must not reach here !");
 	//return _color;	

@@ -6,7 +6,7 @@
 #include <memory>
 
 #include "IInput.hpp"
-#include "CmdParser.hpp"
+//#include "CmdParser.hpp"
 
 namespace PowerPoint{
  
@@ -21,11 +21,14 @@ namespace PowerPoint{
 		static std::shared_ptr<CmdInput>& GetInstance();
 		std::string GetCommand() const override;
 	private: // Helpers
-		bool CmdVerified(std::stringstream& expr) const noexcept override;
+		//bool CmdVerified(std::stringstream& expr) const noexcept override;
 		CmdInput() = default;
 	private:
-		CmdParser& m_cmdParser = CmdParser::GetInstance();
+		//CmdParser& m_cmdParser = CmdParser::GetInstance();
 	};
+
+	using SPtrCmdInput = std::shared_ptr<CmdInput>;
+
 }
 
 #include "InputCmd.impl.cpp"

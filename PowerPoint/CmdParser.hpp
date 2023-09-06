@@ -6,6 +6,7 @@
 #include <unordered_map>
 
 #include "Token.hpp"
+#include "ICommand.hpp"
 #include "ICmdParser.hpp"
 #include "CmdTokenizer.hpp"
 
@@ -21,9 +22,10 @@ namespace PowerPoint{
 	private:
 		CmdParser();
 		Token getToken(std::stringstream& expr) const;
-		EActionType getAction(std::stringstream& expr) const;
+		ECommandType getActionType(std::stringstream& expr) const;
+		ICommand_SPtr getAction(std::stringstream& expr) const;
 	private:
-		const std::unordered_map<std::string, EActionType> m_actionsTranslater;
+		std::unordered_map<std::string, ICommand_SPtr> m_actionsTranslater;
 		Tokenizer& m_tokenizer = Tokenizer::GetInstance();
 		//CmdTokenizer tokenizer;
 	};

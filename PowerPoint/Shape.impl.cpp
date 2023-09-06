@@ -9,47 +9,49 @@
 namespace PowerPoint{
 	
 	// Shape
-	Shape::Shape(const Shapes& shape, Color color, Color backgroundColor, const size_t size) :
-		m_shape{ shape },
-		m_data(color, backgroundColor, size)
+	Shape::Shape(const std::string& objectName, const EShape& shape, EColor color, EColor backgroundColor, const size_t size) : IObject(objectName)/*, m_data(color, backgroundColor, size, EObjectType::SHAPE)*/
 	{
+		m_data.m_color = color;
+		m_data.m_backgroundColor = backgroundColor;
+		m_data.m_size = size;
+		m_data.m_objectType = EObjectType::SHAPE;
 	}
 	
-	void Shape::SetSize(const size_t size) {
-		m_data.size = size;
-	}
-	
-	//inline size_t Shape::GetSize() noexcept {
-	//	return m_data.size;
+	//void Shape::SetSize(const size_t size) {
+	//	m_data.m_size = size;
 	//}
-	
-	void Shape::SetBorderSize(const size_t size) {
-		m_data.borderSize = size;
-	}
-	
-	//inline size_t Shape::GetBorderSize() noexcept {
-	//	return m_data.borderSize;
+	//
+	////inline size_t Shape::GetSize() noexcept {
+	////	return m_data.size;
+	////}
+	//
+	//void Shape::SetBorderSize(const size_t size) {
+	//	m_data.m_borderSize = size;
 	//}
-	
-	void Shape::SetColor(const Color color) {
-		m_data.color = color;
-	}
-	
-	//inline Color Shape::GetColor() noexcept {
-	//	return m_data.color;
+	//
+	////inline size_t Shape::GetBorderSize() noexcept {
+	////	return m_data.borderSize;
+	////}
+	//
+	//void Shape::SetColor(const EColor color) {
+	//	m_data.m_color = color;
 	//}
-	
-	void Shape::SetBackgroundColor(const Color color) {
-		m_data.backgroundColor = color;
-	}
+	//
+	////inline Color Shape::GetColor() noexcept {
+	////	return m_data.color;
+	////}
+	//
+	//void Shape::SetBackgroundColor(const EColor color) {
+	//	m_data.m_backgroundColor = color;
+	//}
 	
 	//inline Color Shape::GetBackgroundColor() noexcept {
 	//	return m_data.backgroundColor;
 	//}
 	
-	void Shape::PrintMe() const noexcept {
-	
-	}
+	//void Shape::PrintMe() const noexcept { // TODO
+	//
+	//}
 	
 	Shape::~Shape() {
 	}

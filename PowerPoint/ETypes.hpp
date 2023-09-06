@@ -1,9 +1,16 @@
 #ifndef __ETYPES__HPP__
 #define __ETYPES__HPP__
 
+#include <string>
+
 #include "ECoordinates.hpp"
 
-enum class Color {
+enum class EObjectType{
+	TEXT,
+	SHAPE,
+};
+
+enum class EColor {
     RED,
     BLUE,
     GREEN,
@@ -11,30 +18,37 @@ enum class Color {
     WHITE,
     YELLOW,
     PINK,
-    GREY
+    GREY,
 };
 
-struct ItemData {
-    Color color = Color::BLACK;
-    Color backgroundColor = Color::WHITE;
-    Coords m_coords;
-    size_t size{ 12 };
-    size_t borderSize{ 2 };
-    ItemData(const Color& _color, const Color& _backColor, const size_t _size) :
-        									color{ _color },
-        									backgroundColor{ _backColor },
-        									size{ _size }
-    {}
-    ItemData() = default;
-};
-
-enum class Shapes {
+enum class EShape {
     Square,
     Rectangle,
     Circle,
     Triangle,
-    Oval
+    Oval,
 };
 
+struct ItemData {
+    //ItemData() = default;
+    ItemData(){}
+    ItemData(const EColor& _color, const EColor& _backColor, const size_t _size, const EObjectType _objectType) :
+        									m_color{ _color },
+        									m_backgroundColor{ _backColor },
+        									m_size{ _size },
+										m_objectType{ _objectType }
+    {}
+    ~ItemData(){}
+    EObjectType m_objectType;
+    EColor m_color = EColor::BLACK;
+    EColor m_backgroundColor = EColor::WHITE;
+    Coords m_coords;
+    size_t m_size{ 12 };
+    size_t m_borderSize{ 2 };
+    union{
+	std::string m_text;
+	EShape m_shapeType;
+    };
+};
 
 #endif // __ETYPES__HPP__

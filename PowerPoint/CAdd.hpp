@@ -6,7 +6,8 @@
 namespace PowerPoint{
 	class CmdAdd : public ICommand{
 	public:
-		void Execute() = 0;
+		CmdAdd();
+		void Execute() override;
 	private:
 	};
 }
