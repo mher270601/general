@@ -3,6 +3,8 @@
 
 class Game{
 public:
+	Game& operator=(const Game& rhs) = delete;
+	Game(const Game& rhs) = delete;
 	static Game& getInstance(){
 		static Game ob;
 		return ob;
@@ -22,8 +24,8 @@ private:
 	std::string m_expr = "My Game Class";
 };
 int main(){
-	Game myGame1 = Game::getInstance();	
-	Game myGame2 = Game::getInstance();
+	Game& myGame1 = Game::getInstance();	
+	Game& myGame2 = Game::getInstance();
 	myGame1.Print_String();
 	myGame2.Print_Int();
 	myGame1.Incr();
