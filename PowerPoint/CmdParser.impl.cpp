@@ -2,6 +2,7 @@
 #define __COMMAND__PARSER__IMPL__CPP__
 
 #include <algorithm>
+#include <stdexcept>
 #include <exception>
 #include <iostream>
 #include <memory>
@@ -9,7 +10,8 @@
 #include "Token.hpp"
 #include "ICommand.hpp"
 //#include "CAdd.hpp"
-#include "cmd_add.hpp"
+#include "CAdd.hpp"
+#include "utility.hpp"
 
 namespace PowerPoint{
 
@@ -34,9 +36,9 @@ namespace PowerPoint{
 		if(m_actionsTranslater.count(action)){
 			//throw std::logic_error("ERROR: Invalid action\n");
 			currentCmd = m_actionsTranslater.at(action)->Clone();
+			return currentCmd;
 		}
-		
-		return currentCmd;
+		throw std::invalid_argument("Undefined command: " + action);
 		//return m_actionsTranslater.at(action);
 	}
 
@@ -55,7 +57,8 @@ namespace PowerPoint{
 
 	CmdParser::CmdParser() { // Default Ctor
 		
-		ICommand_SPtr CAddCmd = std::make_shared<Cmd::CAddCmd>();
+		ICommand_SPtr CAddCmd = std::make_shared<Cmd::CmdAdd>();
+		//ICommand_SPtr CCreateCmd = std::make_shared<Cmd::CCreateCmd>();
 		
 		//m_actionsTranslater.emplace("SET", EActionType::Set);
 		//m_actionsTranslater.emplace("RESET", EActionType::Reset);

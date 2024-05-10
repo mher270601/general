@@ -6,19 +6,19 @@
 #include "ICommand.hpp"
 
 namespace PowerPoint{
-	
-	CmdAdd::CmdAdd(){
+	namespace Cmd{
+		CmdAdd::CmdAdd(){
 
-	}
+		}
 
-	void CmdAdd::Execute(){
+		void CmdAdd::Execute(){
 
-	}
+		}
 
-	ICommand_SPtr CmdAdd::Clone() const {
-		return std::make_shared<CmdAdd>(); //TODO
-	}
-
+		ICommand_SPtr CmdAdd::Clone() const {
+			return std::make_shared<CmdAdd>(*this);
+		}
+	} // namespace Cmd
 } // namespace PowerPoint
 
 #endif // __CADD__IMPL__CPP__

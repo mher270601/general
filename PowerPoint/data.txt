@@ -1,28 +1,25 @@
-dasda
-asdaa
-end
-create
-triangle
-black
-end
-Mher 
-Mher end 
-Mher end final 
-Mherna 
-Mherna create CIRCLE 
-Mherna create CIRCLE exit 
-Mherna create CIRCLE exit e 
-Mherna create CIRCLE exit e q 
-Mherna create CIRCLE exit e q quite 
-Mherna create CIRCLE exit e q quite f 
-Mherna create CIRCLE exit e q quite f finish 
-Mherna create CIRCLE exit e q quite f finish exit() 
-Mherna create CIRCLE exit e q quite f finish exit() f() 
-Mherna create CIRCLE exit e q quite f finish exit() f() finish() 
-Mherna create CIRCLE exit e q quite f finish exit() f() finish() e() 
-Mherna create CIRCLE exit e q quite f finish exit() f() finish() e() e 
 create SLIDE mySlide 
 create SLIDE my 
 create SLIDE my create GROUP grop1 
 create SHAPE 
 create SLIDE mySlide__ 
+CREATE
+GROUP
+MYGROUP123
+CREATE
+GROUP
+MYTESTGROUP
+CREATE
+CREATE
+TRIANGLE
+MYTR1
+CREATE
+TRIANGLE
+TR1111
+CREATE RECTANGLE RCCC1111
+CREATE TRIANGLE TR1111
+CREATE CIRCLE CC444
+CREATE RECTANGLE REC5
+CREATE CIRCLE TC2
+CREATE GROUP MYTC2
+CREATE GROUP GT1

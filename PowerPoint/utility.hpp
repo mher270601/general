@@ -7,6 +7,10 @@
 
 #include "ETypes.hpp"
 
+#define FOREGROUND__GREEN "\033[1;32m"
+#define FOREGROUND__RED "\033[1;31m"
+#define FOREGROUND__END "\033[0m"
+
 EColor getColor(std::string color){
 	//Color _color;
 	std::transform(color.begin(), color.end(), color.begin(), ::toupper);

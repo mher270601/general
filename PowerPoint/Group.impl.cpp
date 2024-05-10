@@ -52,9 +52,10 @@ namespace PowerPoint{
 	}
 
 	void Group::RemoveObject(const IObjectPtr& ObjectForRemove) {
-		if(!m_objectNameTranslater.count(ObjectForRemove->getName()/*ObjectForRemove->GetIdentifier()*/)){
+		if(m_objectNameTranslater.count(ObjectForRemove->getName()/*ObjectForRemove->GetIdentifier()*/)){
 			auto iter = m_groupObjects.begin() + m_objectNameTranslater[ObjectForRemove->getName()/*ObjectForRemove->GetIdentifier()*/];
 			m_groupObjects.erase(iter);
+			std::cout << "OK: " << ObjectForRemove->getName() << " was already removed." << std::endl;
 			return;
 		}
 		//for(auto it = m_groupObjects.begin(); it != m_groupObjects.end(); ++it){
@@ -69,6 +70,7 @@ namespace PowerPoint{
 	void Group::PrintMe() const noexcept {
 		for(const auto& item : m_groupObjects){
 			item->PrintMe();
+			std::cout << "-----" << std::endl;
 		}
 	}
 

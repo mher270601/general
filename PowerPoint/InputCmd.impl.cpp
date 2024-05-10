@@ -23,7 +23,8 @@ namespace PowerPoint{
 		std::string CurrentCommand = "";
 		//do{
 		std::cout << "Input command: ";
-		std::cin >> CurrentCommand;
+		std::getline(std::cin, CurrentCommand);
+		std::cout << "Current command = " << CurrentCommand << std::endl;
 		return CurrentCommand;	
 		//std::stringstream SExpr(CurrentCommand);
 		//if(CmdVerified(SExpr)){

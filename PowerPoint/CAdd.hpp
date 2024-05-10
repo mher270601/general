@@ -1,15 +1,18 @@
 #ifndef __CADD__HPP__
-#define __HANDLE__HPP__
+#define __CADD__HPP__
 
 #include "ICommand.hpp"
 
 namespace PowerPoint{
-	class CmdAdd : public ICommand{
-	public:
-		CmdAdd();
-		void Execute() override;
-	private:
-	};
+	namespace Cmd{
+		class CmdAdd : public ICommand{
+		public:
+			CmdAdd();
+			void Execute() override;
+			ICommand_SPtr Clone() const;
+		private:
+		};
+	}
 }
 
-#endif // __HANDLE__HPP__
+#endif // __CADD__HPP__

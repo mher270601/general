@@ -37,7 +37,8 @@ namespace PowerPoint{
 		while(true){
 			current_CmdLineInput = cmdPtr->GetCommand();
 			std::transform(current_CmdLineInput.begin(), current_CmdLineInput.end(), current_CmdLineInput.begin(), ::toupper);
-			if(current_CmdLineInput == "END"){
+			if(current_CmdLineInput == "END" || current_CmdLineInput == "E" || current_CmdLineInput == "QUITE" || current_CmdLineInput == "Q"){
+				std::cout << FOREGROUND__GREEN << "Data is successfully registered." << FOREGROUND__END << std::endl;
 				break;
 			}
 
@@ -45,7 +46,7 @@ namespace PowerPoint{
 			m_file << current_CmdLineInput << std::endl;
 
 		}
-
+		std::cout << "avoid Get Data function" << std::endl;
 		//std::string action;
 	
 		//while(true){
@@ -154,7 +155,7 @@ namespace PowerPoint{
 		}
 	}
 	
-	static FileManager& GetInstance(){
+	FileManager& FileManager::GetInstance(){
 		static FileManager instance;
 		return instance;
 	}
