@@ -1,5 +1,5 @@
-#ifndef __CADD__HPP__
-#define __CADD__HPP__
+#ifndef __CCREATE__HPP__
+#define __CCREATE__HPP__
 
 #include <sstream>
 
@@ -7,9 +7,9 @@
 
 namespace PowerPoint{
 	namespace Cmd{
-		class CmdAdd : public ICommand{
+		class CmdCreate : public ICommand{
 		public:
-			CmdAdd();
+			CmdCreate();
 			void Execute(std::stringstream& expr) override;
 			ICommand_SPtr Clone() const override;
 		private:
@@ -17,6 +17,6 @@ namespace PowerPoint{
 	} // namespace Cmd
 } // namespace PowerPoint
 
-#include "CAdd.impl.cpp"
+#include "CCreate.impl.cpp"
 
-#endif // __CADD__HPP__
+#endif // __CCREATE__HPP__

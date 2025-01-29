@@ -19,6 +19,7 @@ namespace PowerPoint{
        		Slide(const std::string& objectName);
 		void AddObject(const IObjectPtr& ObjectForAdd) override;
 		void RemoveObject(const IObjectPtr& ObjectForRemove) override;
+		IObjectPtr GetObject(const std::string& ObjectName);
 		//void SetSize(const size_t) override;
         	//void SetBorderSize(const size_t) override;
         	//void SetColor(const Color) override;

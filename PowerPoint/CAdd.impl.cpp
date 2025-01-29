@@ -2,8 +2,10 @@
 #define __CADD__IMPL__CPP__
 
 #include <memory>
+#include <sstream>
 
 #include "ICommand.hpp"
+#include "pwpt_DocStorage.hpp"
 
 namespace PowerPoint{
 	namespace Cmd{
@@ -11,8 +13,8 @@ namespace PowerPoint{
 
 		}
 
-		void CmdAdd::Execute(){
-
+		void CmdAdd::Execute(std::stringstream& expr){
+			DocumentStorage& docStorage = DocumentStorage::GetInstance();
 		}
 
 		ICommand_SPtr CmdAdd::Clone() const {

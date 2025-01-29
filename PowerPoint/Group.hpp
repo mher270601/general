@@ -17,7 +17,7 @@ namespace PowerPoint{
 		Group(const std::string& objectName);
 
 		using GroupPtr = std::shared_ptr<Group>;
-        	void SetSize(const size_t) override;
+		void SetSize(const size_t) override;
         	void SetBorderSize(const size_t) override;
         	void SetColor(const EColor) override;
         	void SetBackgroundColor(const EColor) override;
@@ -28,6 +28,7 @@ namespace PowerPoint{
         	void MoveBottom(const size_t minusY) override;
         	void AddObject(const IObjectPtr& ObjectForAdd) override;
 		void RemoveObject(const IObjectPtr& ObjectForRemove) override;
+		IObjectPtr GetObject(const std::string& ObjectName);
         	virtual ~Group();
 	private:
 

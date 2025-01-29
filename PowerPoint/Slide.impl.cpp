@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <memory>
+#include <stdexcept>
 #include <string>
 
 #include "ETypes.hpp"
@@ -39,6 +40,13 @@ namespace PowerPoint{
 		std::cerr << "WARNING: The object to be removed was not found" << std::endl;
 	}
 
+	inline IObjectPtr Slide::GetObject(const std::string& ObjectName){
+		if(m_objectNameTranslater.count(ObjectName) != 0){
+			return m_slideObjects[m_objectNameTranslater[ObjectName]];
+		}
+		throw std::invalid_argument("ERROR: Invalid object name");
+	}
+	
 	//inline size_t Slide::GetIdentifier() const noexcept {	
 	//	return m_Identifier;
 	//}

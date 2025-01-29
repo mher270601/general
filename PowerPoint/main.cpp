@@ -5,7 +5,7 @@
 #include <memory>
 
 #include "pwpt_fileManager.hpp"
-#include "cmd_add.hpp"
+//#include "cmd_add.hpp"
 #include "Slide.hpp"
 #include "Group.hpp"
 #include "ETypes.hpp"

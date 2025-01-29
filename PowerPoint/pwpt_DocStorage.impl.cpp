@@ -7,12 +7,12 @@
 
 namespace PowerPoint{
 
-	DocumentStorage& GetInstance() {
+	DocumentStorage& DocumentStorage::GetInstance() {
 		static DocumentStorage Instance;
 		return Instance;
 	}
 
-	void RemoveObject(const std::string& ObjectForRemove) {
+	void DocumentStorage::RemoveObject(const std::string& ObjectForRemove) {
 		if(m_Groups.count(ObjectForRemove) || m_Slides.count(ObjectForRemove)){
 			if(dynamic_cast<Group*>(&m_Groups[ObjectForRemove]) || dynamic_cast<Slide*>(&m_Slides[ObjectForRemove])){
 
@@ -26,7 +26,7 @@ namespace PowerPoint{
 		}
 	}
 
-	void AddObject(const std::string& ObjectForAdd, const std::string& StorageName) {
+	void DocumentStorage::AddObject(const std::string& ObjectForAdd, const std::string& StorageName) {
 		if(m_Slides.count(StorageName)){
 			IObjectControllerPtr _slide = m_Slides[StorageName];
 			_slide->AddObject();

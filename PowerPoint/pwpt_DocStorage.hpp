@@ -1,3 +1,6 @@
+#ifndef __DOC__STORAGE__HPP__
+#define __DOC__STORAGE__HPP__
+
 #include <memory>
 #include <unordered_map>
 #include <string>
@@ -16,7 +19,7 @@ namespace PowerPoint{
 		DocumentStorage& operator=(const DocumentStorage& rhs) = delete; // Copy assign
 		
 		void RemoveObject(const std::string& ObjectForRemove);
-		void AddObject(const std::string& ObjectForAdd);
+		void AddObject(const std::string& ObjectForAdd, const std::string& StorageName);
 	private:
 		DocumentStorage() = default;
 	private:
@@ -27,3 +30,5 @@ namespace PowerPoint{
 } // namespace PowerPoint
 
 #include "pwpt_DocStorage.impl.cpp"
+
+#endif // __DOC__STORAGE__HPP__

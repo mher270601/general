@@ -15,7 +15,7 @@ namespace PowerPoint{
 
 		class ICommand{
 		public:
-			virtual void Execute(std::istringstream& expr) = 0;
+			virtual void Execute(std::stringstream& expr) = 0;
 			virtual std::shared_ptr<ICommand> Clone() const = 0;
 			virtual ~ICommand() = default;
 		//private: 

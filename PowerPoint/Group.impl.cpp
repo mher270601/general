@@ -2,6 +2,7 @@
 #define __GROUP__IMPL__CPP__
 
 #include <iostream>
+#include <stdexcept>
 #include <string>
 #include <memory>
 #include <cstring>
@@ -66,7 +67,14 @@ namespace PowerPoint{
 		//}
 		std::cerr << "WARNING: The object to be removed was not found" << std::endl;
 	}
-	
+
+	inline IObjectPtr Group::GetObject(const std::string& ObjectName){
+		if(m_objectNameTranslater.count(ObjectName) != 0){
+			return m_groupObjects[m_objectNameTranslater[ObjectName]];
+		}
+		throw std::invalid_argument("ERROR: Invalid object name");
+	}
+
 	void Group::PrintMe() const noexcept {
 		for(const auto& item : m_groupObjects){
 			item->PrintMe();
