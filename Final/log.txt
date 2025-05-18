@@ -1,0 +1,296 @@
+										GAME RESULTS
+Nearest snowball coords x: 22 y: 6
+Walk to snowball from nearest x: 7 y: 5
+		(Man move right)
+Left foot
+x1: 4 y1: 0 x2: 6 y2: 5
+Right foot
+x1: 6 y1: 5 x2: 8 y2: 0
+Body
+x1: 6 y1: 5 x2: 6 y2: 10
+Left hand
+x1: 6 y1: 10 x2: 4 y2: 5
+Right hand
+x1: 6 y1: 10 x2: 8 y2: 5
+Head
+x1: 5 y1: 4 x2: 5 y2: 9
+x1: 5 y1: 9 x2: 8 y2: 9
+x1: 8 y1: 9 x2: 8 y2: 4
+x1: 8 y1: 4 x2: 5 y2: 4
+
+Left foot
+x1: 5 y1: 0 x2: 7 y2: 5
+Right foot
+x1: 7 y1: 5 x2: 9 y2: 0
+Body
+x1: 7 y1: 5 x2: 7 y2: 10
+Left hand
+x1: 7 y1: 10 x2: 5 y2: 5
+Right hand
+x1: 7 y1: 10 x2: 9 y2: 5
+Head
+x1: 6 y1: 4 x2: 6 y2: 9
+x1: 6 y1: 9 x2: 9 y2: 9
+x1: 9 y1: 9 x2: 9 y2: 4
+x1: 9 y1: 4 x2: 6 y2: 4
+
+Left foot
+x1: 6 y1: 0 x2: 8 y2: 5
+Right foot
+x1: 8 y1: 5 x2: 10 y2: 0
+Body
+x1: 8 y1: 5 x2: 8 y2: 10
+Left hand
+x1: 8 y1: 10 x2: 6 y2: 5
+Right hand
+x1: 8 y1: 10 x2: 10 y2: 5
+Head
+x1: 7 y1: 4 x2: 7 y2: 9
+x1: 7 y1: 9 x2: 10 y2: 9
+x1: 10 y1: 9 x2: 10 y2: 4
+x1: 10 y1: 4 x2: 7 y2: 4
+
+Left foot
+x1: 7 y1: 0 x2: 9 y2: 5
+Right foot
+x1: 9 y1: 5 x2: 11 y2: 0
+Body
+x1: 9 y1: 5 x2: 9 y2: 10
+Left hand
+x1: 9 y1: 10 x2: 7 y2: 5
+Right hand
+x1: 9 y1: 10 x2: 11 y2: 5
+Head
+x1: 8 y1: 4 x2: 8 y2: 9
+x1: 8 y1: 9 x2: 11 y2: 9
+x1: 11 y1: 9 x2: 11 y2: 4
+x1: 11 y1: 4 x2: 8 y2: 4
+
+Left foot
+x1: 8 y1: 0 x2: 10 y2: 5
+Right foot
+x1: 10 y1: 5 x2: 12 y2: 0
+Body
+x1: 10 y1: 5 x2: 10 y2: 10
+Left hand
+x1: 10 y1: 10 x2: 8 y2: 5
+Right hand
+x1: 10 y1: 10 x2: 12 y2: 5
+Head
+x1: 9 y1: 4 x2: 9 y2: 9
+x1: 9 y1: 9 x2: 12 y2: 9
+x1: 12 y1: 9 x2: 12 y2: 4
+x1: 12 y1: 4 x2: 9 y2: 4
+
+Left foot
+x1: 9 y1: 0 x2: 11 y2: 5
+Right foot
+x1: 11 y1: 5 x2: 13 y2: 0
+Body
+x1: 11 y1: 5 x2: 11 y2: 10
+Left hand
+x1: 11 y1: 10 x2: 9 y2: 5
+Right hand
+x1: 11 y1: 10 x2: 13 y2: 5
+Head
+x1: 10 y1: 4 x2: 10 y2: 9
+x1: 10 y1: 9 x2: 13 y2: 9
+x1: 13 y1: 9 x2: 13 y2: 4
+x1: 13 y1: 4 x2: 10 y2: 4
+
+Left foot
+x1: 10 y1: 0 x2: 12 y2: 5
+Right foot
+x1: 12 y1: 5 x2: 14 y2: 0
+Body
+x1: 12 y1: 5 x2: 12 y2: 10
+Left hand
+x1: 12 y1: 10 x2: 10 y2: 5
+Right hand
+x1: 12 y1: 10 x2: 14 y2: 5
+Head
+x1: 11 y1: 4 x2: 11 y2: 9
+x1: 11 y1: 9 x2: 14 y2: 9
+x1: 14 y1: 9 x2: 14 y2: 4
+x1: 14 y1: 4 x2: 11 y2: 4
+
+Left foot
+x1: 11 y1: 0 x2: 13 y2: 5
+Right foot
+x1: 13 y1: 5 x2: 15 y2: 0
+Body
+x1: 13 y1: 5 x2: 13 y2: 10
+Left hand
+x1: 13 y1: 10 x2: 11 y2: 5
+Right hand
+x1: 13 y1: 10 x2: 15 y2: 5
+Head
+x1: 12 y1: 4 x2: 12 y2: 9
+x1: 12 y1: 9 x2: 15 y2: 9
+x1: 15 y1: 9 x2: 15 y2: 4
+x1: 15 y1: 4 x2: 12 y2: 4
+
+Left foot
+x1: 12 y1: 0 x2: 14 y2: 5
+Right foot
+x1: 14 y1: 5 x2: 16 y2: 0
+Body
+x1: 14 y1: 5 x2: 14 y2: 10
+Left hand
+x1: 14 y1: 10 x2: 12 y2: 5
+Right hand
+x1: 14 y1: 10 x2: 16 y2: 5
+Head
+x1: 13 y1: 4 x2: 13 y2: 9
+x1: 13 y1: 9 x2: 16 y2: 9
+x1: 16 y1: 9 x2: 16 y2: 4
+x1: 16 y1: 4 x2: 13 y2: 4
+
+Left foot
+x1: 13 y1: 0 x2: 15 y2: 5
+Right foot
+x1: 15 y1: 5 x2: 17 y2: 0
+Body
+x1: 15 y1: 5 x2: 15 y2: 10
+Left hand
+x1: 15 y1: 10 x2: 13 y2: 5
+Right hand
+x1: 15 y1: 10 x2: 17 y2: 5
+Head
+x1: 14 y1: 4 x2: 14 y2: 9
+x1: 14 y1: 9 x2: 17 y2: 9
+x1: 17 y1: 9 x2: 17 y2: 4
+x1: 17 y1: 4 x2: 14 y2: 4
+
+Left foot
+x1: 14 y1: 0 x2: 16 y2: 5
+Right foot
+x1: 16 y1: 5 x2: 18 y2: 0
+Body
+x1: 16 y1: 5 x2: 16 y2: 10
+Left hand
+x1: 16 y1: 10 x2: 14 y2: 5
+Right hand
+x1: 16 y1: 10 x2: 18 y2: 5
+Head
+x1: 15 y1: 4 x2: 15 y2: 9
+x1: 15 y1: 9 x2: 18 y2: 9
+x1: 18 y1: 9 x2: 18 y2: 4
+x1: 18 y1: 4 x2: 15 y2: 4
+
+Left foot
+x1: 15 y1: 0 x2: 17 y2: 5
+Right foot
+x1: 17 y1: 5 x2: 19 y2: 0
+Body
+x1: 17 y1: 5 x2: 17 y2: 10
+Left hand
+x1: 17 y1: 10 x2: 15 y2: 5
+Right hand
+x1: 17 y1: 10 x2: 19 y2: 5
+Head
+x1: 16 y1: 4 x2: 16 y2: 9
+x1: 16 y1: 9 x2: 19 y2: 9
+x1: 19 y1: 9 x2: 19 y2: 4
+x1: 19 y1: 4 x2: 16 y2: 4
+
+Left foot
+x1: 16 y1: 0 x2: 18 y2: 5
+Right foot
+x1: 18 y1: 5 x2: 20 y2: 0
+Body
+x1: 18 y1: 5 x2: 18 y2: 10
+Left hand
+x1: 18 y1: 10 x2: 16 y2: 5
+Right hand
+x1: 18 y1: 10 x2: 20 y2: 5
+Head
+x1: 17 y1: 4 x2: 17 y2: 9
+x1: 17 y1: 9 x2: 20 y2: 9
+x1: 20 y1: 9 x2: 20 y2: 4
+x1: 20 y1: 4 x2: 17 y2: 4
+
+Left foot
+x1: 17 y1: 0 x2: 19 y2: 5
+Right foot
+x1: 19 y1: 5 x2: 21 y2: 0
+Body
+x1: 19 y1: 5 x2: 19 y2: 10
+Left hand
+x1: 19 y1: 10 x2: 17 y2: 5
+Right hand
+x1: 19 y1: 10 x2: 21 y2: 5
+Head
+x1: 18 y1: 4 x2: 18 y2: 9
+x1: 18 y1: 9 x2: 21 y2: 9
+x1: 21 y1: 9 x2: 21 y2: 4
+x1: 21 y1: 4 x2: 18 y2: 4
+
+Left foot
+x1: 18 y1: 0 x2: 20 y2: 5
+Right foot
+x1: 20 y1: 5 x2: 22 y2: 0
+Body
+x1: 20 y1: 5 x2: 20 y2: 10
+Left hand
+x1: 20 y1: 10 x2: 18 y2: 5
+Right hand
+x1: 20 y1: 10 x2: 22 y2: 5
+Head
+x1: 19 y1: 4 x2: 19 y2: 9
+x1: 19 y1: 9 x2: 22 y2: 9
+x1: 22 y1: 9 x2: 22 y2: 4
+x1: 22 y1: 4 x2: 19 y2: 4
+
+										**********************************
+										*  The man reached the snowball. *
+										**********************************
+
+Nearest target coords x: 14 y: 6
+Go to target from nearest x: 22 y: 6
+		(Snowball move left)
+x1: 21 y1: 6 x2: 21 y2: 11
+x1: 21 y1: 11 x2: 26 y2: 11
+x1: 26 y1: 11 x2: 26 y2: 6
+x1: 26 y1: 6 x2: 21 y2: 6
+
+x1: 20 y1: 6 x2: 20 y2: 11
+x1: 20 y1: 11 x2: 25 y2: 11
+x1: 25 y1: 11 x2: 25 y2: 6
+x1: 25 y1: 6 x2: 20 y2: 6
+
+x1: 19 y1: 6 x2: 19 y2: 11
+x1: 19 y1: 11 x2: 24 y2: 11
+x1: 24 y1: 11 x2: 24 y2: 6
+x1: 24 y1: 6 x2: 19 y2: 6
+
+x1: 18 y1: 6 x2: 18 y2: 11
+x1: 18 y1: 11 x2: 23 y2: 11
+x1: 23 y1: 11 x2: 23 y2: 6
+x1: 23 y1: 6 x2: 18 y2: 6
+
+x1: 17 y1: 6 x2: 17 y2: 11
+x1: 17 y1: 11 x2: 22 y2: 11
+x1: 22 y1: 11 x2: 22 y2: 6
+x1: 22 y1: 6 x2: 17 y2: 6
+
+x1: 16 y1: 6 x2: 16 y2: 11
+x1: 16 y1: 11 x2: 21 y2: 11
+x1: 21 y1: 11 x2: 21 y2: 6
+x1: 21 y1: 6 x2: 16 y2: 6
+
+x1: 15 y1: 6 x2: 15 y2: 11
+x1: 15 y1: 11 x2: 20 y2: 11
+x1: 20 y1: 11 x2: 20 y2: 6
+x1: 20 y1: 6 x2: 15 y2: 6
+
+x1: 14 y1: 6 x2: 14 y2: 11
+x1: 14 y1: 11 x2: 19 y2: 11
+x1: 19 y1: 11 x2: 19 y2: 6
+x1: 19 y1: 6 x2: 14 y2: 6
+
+										*********************************
+										*  Congratulations!             *
+										*  The snowball hit the target! *
+										*********************************
+
