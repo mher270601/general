@@ -3,19 +3,21 @@
 
 #include <mutex>
 #include <fstream>
-#include <memory>
 #include <string>
 
 class Logger{
 public:
 	static Logger& Instance();
-
-	void Log(const std::string& msg);
+	void LogApp(const std::string& msg);
+	void LogEvent(const std::string& msg);
+	void LogCamera(const std::string& msg);
+	void LogMicrophone(const std::string& msg);
+	void LogFileOpen(const std::string& msg);
 
 private:
 	Logger();
+	void LogToFile(const std::string& filePath, const std::string& msg);
 	std::mutex m_mutex;
-	std::ofstream m_file;
 };
 
 #endif // __LOGGER__HPP__

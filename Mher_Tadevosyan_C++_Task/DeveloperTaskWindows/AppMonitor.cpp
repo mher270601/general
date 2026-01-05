@@ -6,8 +6,10 @@
 #include "core/Utility.hpp"
 #include <Windows.h>
 #include <Psapi.h>
+#include <Wtsapi32.h>
 
 #pragma comment(lib, "Psapi.lib")
+#pragma comment(lib, "Wtsapi32.lib")
 
 AppMonitor::AppMonitor() : m_running(false) {}
 
@@ -29,6 +31,11 @@ void AppMonitor::Stop(){
 
 void AppMonitor::Run(){
 	while(m_running){
+		DWORD sessionId = WTSGetActiveConsoleSessionId();
+		if(sessionId == 0xFFFFFFFF){
+			continue;
+		}
+
 		HWND hwnd = GetForegroundWindow();
 		if(hwnd){
 			DWORD pid;
@@ -37,11 +44,25 @@ void AppMonitor::Run(){
 			char title[256];
 			GetWindowTextA(hwnd, title, sizeof(title));
 
-			std::string log = Utility::GetUtcTimestamp() + " PID =" + std::to_string(pid) + " TITLE = " + title;
+			HANDLE hProcess = OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, FALSE, pid);
+			char exePath[MAX_PATH] = "UNKNOWN";
+			if(hProcess){
+				GetModuleFileNameExA(hProcess, NULL, exePath, MAX_PATH);
+				CloseHandle(hProcess);
+			}
 
-			Logger::Instance().Log(log);
+			std::string username = Utility::GetUsernameFromSession(sessionId);
+			std::string timestamp = Utility::GetUtcTimestamp();
+
+			std::string log = timestamp + " | Session = " + std::to_string(sessionId) +
+				" | User = " + username +
+				" | PID = " + std::to_string(pid) +
+				" | Exe = " + exePath +
+				" | Title = " + title;
+
+			Logger::Instance().LogApp(log);
 		}
-		Sleep(1000);
+		Sleep(100);
 	}
 }
 
