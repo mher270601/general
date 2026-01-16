@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  postgres_nuts:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: aaa000
+      POSTGRES_DB: nutsdb
+    volumes:
+      - nuts_subscriber_pgdata:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/01-init.sql
+      - ./schema.sql:/docker-entrypoint-initdb.d/02-schema.sql
+    command: ["postgres", "-c", "listen_addresses=*"]
+
+volumes:
+  nuts_subscriber_pgdata:
